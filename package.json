@@ -1,0 +1,16 @@
+{
+  "name": "code_in_the_dark",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "r1": "reload -d ./round_1",
+    "r2": "reload -d ./round_2",
+    "r3": "reload -d ./round_3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "reload": "2.1.0"
+  }
+}
