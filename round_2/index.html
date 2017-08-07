@@ -4,7 +4,7 @@
         ~ COLORS ~
         #ffffff - white
         #cccccc - grey
-        
+
         ~ FONTS ~
         'Quicksand' - sans serif
         'Merriweather' - serif
@@ -20,10 +20,86 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <style>
-            /* CSS goes here */
+          /* CSS goes here */
+          #background {
+            position: absolute;
+            z-index: -1;
+            width: 1024px;
+            height: 768px;
+          }
+          #header {
+            padding: 32px;
+            z-index: 1;
+          }
+          /*clearfix */
+          #header:after {
+            content: '';
+            clear: both;
+            display: table;
+          }
+          #logo {
+            display: block;
+            float: left;
+            width: 155px;
+            height: 43px;
+            fill: white;
+          }
+          #menu {
+            float: right;
+            height: 43px;
+            vertical-align: middle;
+          }
+          .menu-item {
+            display: inline-block;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 12px;
+            line-height: 12px;
+            margin-top: 16px;
+            margin-right: 32px;
+            color: white;
+          }
+          .menu-item.gray {
+            color: #cccccc;
+          }
+          #title {
+            margin-top: 150px;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+          }
+          h1 {
+            font-size: 32px;
+            font-family: 'Quicksand', sans-serif;
+            line-height: 46px;
+            text-align: center;
+            color: white;
+          }
+          h2 {
+            font-size: 12px;
+            line-height: 24px;
+            font-family: 'Merriweather', serif;
+            text-align: center;
+            color: #cccccc;
+          }
         </style>
     </head>
     <body>
+      <img src="/assets/background.jpg" id="background" />
+      <div id="header">
+        <img id="logo" src="/assets/logo.svg" />
+        <div id="menu">
+          <div class="menu-item">Home</div>
+          <div class="menu-item">About Us</div>
+          <div class="menu-item gray">Services</div>
+          <div class="menu-item">Products</div>
+          <div class="menu-item">Press</div>
+        </div>
+      </div>
+      <div id="title">
+        <h1>Question the Answers</h1>
+        <h2>It's not about healing the pain; it's about the pain of healing.</h2>
+      </div>
         <!-- HTML goes here -->
     </body>
 </html>
